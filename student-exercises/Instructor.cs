@@ -3,12 +3,10 @@
     public class Instructor : Person
     {
         public string specialty { get; set; }
-    /*Need method to assign students to an exercise*/
-    public void assignExercise(string exerciseName, string studentName)
+    /*Making a method to assign students to an exercise*/
+    public void assignExercise(Student student, Exercise exercise)
     {
-        /*Name of exercise*/
-        /*Name of student*/
-        /*Student.currentExercises.Add(exercise.name)*/
+        student.currentExercises.Add(exercise);
     }
     }
 }
